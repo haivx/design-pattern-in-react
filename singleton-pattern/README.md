@@ -47,8 +47,8 @@ Some reality example: Axios instance, redux instance, and some other global inst
 
 3. Advantages and disadvantage
 
-- Advantages: Instead of having to set up memory for new instance each time, we only have to setup memory for one instance. This could potentially save a lot of memory space
-- Disadvantages: However, Singletons actually considered an anti-pattern in javascript. 
+a. Advantages: Instead of having to set up memory for new instance each time, we only have to setup memory for one instance. This could potentially save a lot of memory space
+b. Disadvantages: However, Singletons actually considered an anti-pattern in javascript. 
 
 + Dependency hiding: In many case, we don't want reuse the same value among other files by importing the same instances. Because we can accidently modify the values in Singleton. This can lead to unexpected behavior, since multiple instances of the Singleton can be shared throughout the application. which would all get modified as well.
 
